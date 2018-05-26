@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
+from home import views
 from django.contrib import admin
 from accounts import urls as urls_accounts
 from products import urls as urls_products
@@ -26,6 +27,8 @@ from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^about/$', views.get_about),
+    url(r'^contact/$', views.get_contact),
     url(r'^$', all_products, name='index'),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^cart/', include(urls_cart)),
