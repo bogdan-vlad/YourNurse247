@@ -1,40 +1,11 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
 {% block content %}
-{% load bootstrap tags %}
 
-<a class="navbar-brand" href="{% url 'get_posts' %}"><img src="/media/img/logo.png"></img></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{% url 'new_post' %}">New Post</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    {% block blogtitle %}
+    {% endblock %}
 
-    <div id="masthead">
-        <div class="container">
-            <div class="row">
-                <h1> stack
-                    <p id="logo" class="lead">The Trials of a Bootcamp Developer</p>
-                </h1>
-            </div>
-        </div>
-    </div>
+    {% block blogcontent %}
+    {% endblock %}
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel">
-                    <div class="panel-body">
-                        <!--blogpost entries-->
-                        {% block content %}
-                        {% endblock %}
-                        <!--blogpost entries-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
 {% endblock %}

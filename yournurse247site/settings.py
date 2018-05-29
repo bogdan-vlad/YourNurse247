@@ -42,9 +42,13 @@ INSTALLED_APPS = [
     'accounts',
     'products',
     'checkout',
+    'home',
     'cart',
-    'posts'
+    'blog',
+    
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

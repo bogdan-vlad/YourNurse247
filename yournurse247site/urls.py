@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from home import views
+from blog import views as blog_views
+from django.views.static import serve
 from django.contrib import admin
 from accounts import urls as urls_accounts
 from products import urls as urls_products
@@ -22,13 +24,19 @@ from checkout import urls as urls_checkout
 from cart import urls as urls_cart
 from products.views import all_products
 from django.views import static
-from django.views import static
 from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^about/$', views.get_about),
-    url(r'^contact/$', views.get_contact),
+    url(r'^home/', views.home),
+    url(r'^about/$', views.about),
+    
+    
+    url(r'^blog/$', blog_views.post_list, name='post_list'),
+    url(r'^blog/(?P<id>\d+)/$', blog_views.post_detail),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
+    
+    url(r'^contact/$', views.contact),
     url(r'^$', all_products, name='index'),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^cart/', include(urls_cart)),
