@@ -1,7 +1,9 @@
 body {
     font-family: Arial;
     padding-top: 100px;
+    display: block;
 }
+
 
 footer {
     margin-top: 40px;

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     {% block head_js %}
     {% endblock head_js %}
 </head>
@@ -38,8 +39,8 @@
                 </button>
                 <a class="navbar-brand" href="/home/">YourNurse247</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left">
+            <div id="navbar" class="navbar-collapse collapse navbar-left">
+                <ul class="nav navbar-nav">
                     <li><a class="opt" href="/about/">About</a></li>
                     <li><a class="opt" href="/blog/">Blog</a></li>
                     <li><a class="opt" href="/products/">Products</a></li>
@@ -47,8 +48,8 @@
                 </ul>
             </div>
             
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'profile' %}"><i class="fas fa-user-alt"></i> Profile</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
