@@ -1,0 +1,15 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h2 {
+    text-align: center;
+}
+.about-paragraph {
+    text-align: center;
+}
+.gradient {
+    background: linear-gradient(#ffffff, #97ade5);
+}

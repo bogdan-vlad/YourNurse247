@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .marketing {
+    background-image: url("../media/img/4.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.rounded-circle {
+    background: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.featurette-divider {
+    margin: 5rem 0;
+}
+.featurette-heading {
+    text-align: center;    font-size: 60px;
+    font-weight: 500;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.lead {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+.img-fluid {
+    max-width: 100%;
+}
+.carousel {
+    position: relative;
+    padding-bottom: 0px;
+}
