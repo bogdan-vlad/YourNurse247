@@ -15,20 +15,32 @@
     text-align: center;
 }
 .rounded-circle {
+    margin-left: auto;
+    margin-right: auto;
     background: red;
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    box-shadow: 5px 10px 8px 5px #888888;
 }
-img {
-    vertical-align: middle;
-    border-style: none;
+.orange{
+    background: #ff8000;
+}
+.blue {
+    background: blue;
+}
+.round {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+
 }
 .featurette-divider {
     margin: 5rem 0;
 }
 .featurette-heading {
-    text-align: center;    font-size: 60px;
+    text-align: center;    
+    font-size: 60px;
     font-weight: 500;
 }
 .marketing h2 {
@@ -44,4 +56,9 @@ img {
 .carousel {
     position: relative;
     padding-bottom: 0px;
+}
+.featurette-image {
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
 }

@@ -1,15 +1,21 @@
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about h2 {
-    text-align: center;
 }
 .about-paragraph {
+    font-size: 20px;
     text-align: center;
+    padding: 20px;
 }
-.gradient {
-    background: linear-gradient(#ffffff, #97ade5);
+.about-us {
+    background-color: #e5e7ea;
+}
+.box {
+    width: 960px;
+    height: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

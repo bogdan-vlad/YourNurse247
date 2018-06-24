@@ -1,15 +1,28 @@
 .Blog-img {
-    background: url('') no-repeat;
-    width: 100%;
+    background-image: url("media/7.jpg");
+    margin-top: -50px;
+    width: 80%;
     height: 350px;
     background-size: cover;
-    background-position: 50% 80%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+h2.blog {
+    font-family: 'Indie Flower', cursive;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 40px;
+    width: 80%;
+    height: 140px;
+    background-color: rgba(100, 98, 218, 0.8);
+    margin: 0 auto;
+    text-align: center;
+}
 @media (max-width: 600px) {
     .Blog-img > h2 {
         font-size: 60px;
@@ -29,12 +42,12 @@
     margin: 0 auto;
 }
 
-.Blogpost-img > a, .Blogpost-img > h2 {
+.Blogpost-img > a, .Blogpost-img > h2{
     color: white;
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     width: 80%;
-    background-color: rgba(139, 69, 19, 0.8);
+    background-color: rgba(100, 98, 218, 0.8);
     margin: 0 auto;
 }
 
@@ -63,7 +76,7 @@
 }
 
 .news-info {
-    background-color: rgba(139, 69, 19, 0.6);
+    background-color: rgba(100, 98, 218, 0.6);
     color: rgba(255, 255, 255, 0.7);
     padding: 5px;
     width: 80%;
@@ -171,4 +184,7 @@ input[type=text]:focus, textarea:focus {
 
 .pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
     color: #333333;
+}
+.content {
+    text-align: center;
 }
