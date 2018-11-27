@@ -1,7 +1,7 @@
 .Blog-img {
     background-image: url("media/7.jpg");
     margin-top: -50px;
-    width: 80%;
+    width: 60%;
     height: 350px;
     background-size: cover;
     display: flex;
@@ -11,7 +11,14 @@
     margin-left: auto;
     margin-right: auto;
 }
+.text-center {
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+
 h2.blog {
+    opacity: 0.8;
     font-family: 'Indie Flower', cursive;
     padding-top: 35px;
     padding-bottom: 5px;
@@ -19,7 +26,7 @@ h2.blog {
     font-size: 40px;
     width: 80%;
     height: 140px;
-    background-color: rgba(100, 98, 218, 0.8);
+    background-color: #3a87ad;
     margin: 0 auto;
     text-align: center;
 }
@@ -31,7 +38,7 @@ h2.blog {
 
 .Blogpost-img {
     background: url('');
-    width: 80%;
+    width: 60%;
     height: 200px;
     background-size: cover !important;
     background-position: 50% 50% !important;
@@ -43,11 +50,12 @@ h2.blog {
 }
 
 .Blogpost-img > a, .Blogpost-img > h2{
+    opacity: 0.8;
     color: white;
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     width: 80%;
-    background-color: rgba(100, 98, 218, 0.8);
+    background-color: #3a87ad;
     margin: 0 auto;
 }
 
@@ -62,10 +70,11 @@ h2.blog {
 }
 
 .blogpostpage-img {
-    width: 100% !important;
+    width: 60% !important;
 }
 
 .blogpostpage-img2 {
+    margin-top: -50px;
     height: 350px !important;
 }
 
@@ -76,10 +85,11 @@ h2.blog {
 }
 
 .news-info {
-    background-color: rgba(100, 98, 218, 0.6);
+    opacity: 0.8;
+    background-color: #3a87ad;
     color: rgba(255, 255, 255, 0.7);
     padding: 5px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -98,7 +108,7 @@ h2.blog {
     }
 }
 
-input[type=text], textarea {
+input[type=text] {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
@@ -153,23 +163,28 @@ input[type=text]:focus, textarea:focus {
 }
 
 .read-moreblog {
-    background-color: rgba(139, 69, 19, 0.8) !important;
+    background-color: #3a87ad !important;
 }
 
 .read-moreblog:hover, .read-moreblog:focus {
-    background-color: rgba(139, 69, 19, 1) !important;
+    background-color: #7061F7 !important;
 }
-
+#mailAddress {
+    margin-bottom: 5%;
+}
 .btn {
-    background-color: rgba(34, 139, 34, 0.8);
+    background-color: #5978a6;
     background-image: none;
     color: white;
-    border-radius: 0;
+    border-radius: 2;
     border: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .btn:hover, btn:focus {
-    background-color: rgba(34, 139, 34, 0.6);
+    background-color: #7061F7;
 }
 
 .blogsearch {
@@ -187,4 +202,14 @@ input[type=text]:focus, textarea:focus {
 }
 .content {
     text-align: center;
+}
+#disqus_thread {
+    margin-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 }

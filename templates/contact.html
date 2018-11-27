@@ -1,16 +1,137 @@
 {% extends 'base.html' %}
 
+{% load bootstrap_tags %}
 
 {% block content %}
+<form action="//formspree.io/bogdan.vlad.v@gmail.com" class="contact" method="POST">
+    <div class="myForm">
+        <div class="head">
+              <h2 class="hello">We would like to hear from you, contact us</h2>
+        </div>
+        <input class="detail inputDetail" id="name" name="name" placeholder="Name" type="myText" required > <br />
+        <input class="detail inputDetail" id="email" name="_replyto" placeholder="Email" type="email" required > <br />
+        <textarea class="detail textareaDetail" id="comments" name="message" placeholder="Message" rows="4"></textarea> <br />
+        <button class="btn btn-default buttonForm" type="submit">Send</button>
+        <input type="hidden" name="_next" value="https://yournurse247-site-bogdanvlad.c9users.io/home" />
+        <input type="myText" name="_gotcha" style="display:none" />  
+    </div>
+</form>
 
-<h2>Contact</h2>
-        <p class="about-paragraph">Lorem Ipsum is simply dummy text of the printing and 
-        typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-        ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-        it to make a type specimen book. It has survived not only five centuries, but also 
-        the leap into electronic typesetting, remaining essentially unchanged. 
-        It was popularised in the 1960s with the release of Letraset sheets containing 
-        Lorem Ipsum passages, and more recently with desktop publishing software like 
-        Aldus PageMaker including versions of Lorem Ipsum.</p>
+<style type="text/css">
+body{
+  background-image: url("../media/img/10.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 
+}
+
+.myForm {
+  max-width:600px;
+  margin:0 auto;
+  text-align:center;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:#00476f;
+}
+.head {
+  -webkit-border-radius:6px 6px 0px 0px;
+  -moz-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  background-color:#cccccc;
+  color:#FAFAFA;
+}
+.hello {
+  text-align:center;
+  padding:18px 0 18px 0;
+  font-size: 1.4em;
+}
+.contact {
+    width: 800px;
+}
+.inputDetail {
+  margin-bottom:10px;
+}
+.textareaDetail {
+  height:100px;
+  margin-bottom:10px;
+}
+.inputDetail:first-of-type
+{
+  margin-top:35px;
+}
+.detail {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: white;
+  color:black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #FAFAFA;
+}
+:-moz-placeholder {
+   color: #FAFAFA;  
+}
+::-moz-placeholder {
+   color: #FAFAFA; 
+}
+:-ms-input-placeholder {  
+   color: #FAFAFA;  
+}
+.buttonForm {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#3a87ad;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+.buttonForm:hover, .button:hover {
+  background:#007DF6;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+    
+.buttonForm {
+  width:90%;
+  }
+ 
+}
+.message {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#2ABCA7;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+</style>
 {% endblock %}

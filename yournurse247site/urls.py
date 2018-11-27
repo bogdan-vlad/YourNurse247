@@ -35,12 +35,11 @@ urlpatterns = [
     url(r'^blog/$', blog_views.post_list, name='post_list'),
     url(r'^blog/(?P<id>\d+)/$', blog_views.post_detail),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
-    
-    url(r'^contact/$', views.contact),
-    url(r'^$', all_products, name='index'),
+    url(r'^$', views.home, name='index'),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^products/', include(urls_products)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
+    url(r'^contact/', views.contact),
 ]

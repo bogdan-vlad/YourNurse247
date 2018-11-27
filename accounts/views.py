@@ -14,7 +14,7 @@ def index(request):
 def logout(request):
     """Log the user out"""
     auth.logout(request)
-    messages.success(request, "You have successfully been logged out")
+    # messages.success(request, "You have successfully been logged out")
     return redirect(reverse('index'))
 
 
@@ -32,7 +32,7 @@ def login(request):
 
             if user:
                 auth.login(user=user, request=request)
-                messages.success(request, "You have successfully logged in!")
+                # messages.success(request, "You have successfully logged in!")
                 return redirect(reverse('index'))
             else:
                 login_form.add_error(None, "Your username or password is incorrect")
@@ -55,7 +55,7 @@ def registration(request):
                                      
             if user:
                 auth.login(user=user, request=request)
-                messages.success(request, "You have succefully registered")
+                # messages.success(request, "You have succefully registered")
                 return redirect(reverse('index'))
             else:
                 messages.error(request, "Unable to register your account at this time")
@@ -65,7 +65,7 @@ def registration(request):
         "registration_form": registration_form})
     
     
-def user_profile(request):
+def profile(request):
     """The user's profile page"""
     user = User.objects.get(email=request.user.email)
     return render(request, 'profile.html', {"profile": user})

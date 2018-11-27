@@ -16,3 +16,4 @@ def about(request):
 def contact(request):
     """View over the contact page"""
     return render(request, 'contact.html')
+    
