@@ -6,15 +6,14 @@
     <h3>Your products in the cart</h3>
 <div class="row row-flex productBack">
     {% for item in cart_items %}
-    <div class="card text-white bg-primary mb-3">
+    <div class="col-sm-offset-0 col-lg-4 display panel">
         
         <!--<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>-->
         
         <div class="caption">
-            <h3>{{ item.product.name }}</h3>
-            <p class="product-description">{{ item.product.description }}</p>
-            <p>{{ item.product.price }}</p>
-            <p>
+            <h3>{{ item.product.name }}</h3>    
+            <!--<p class="product-description">{{ item.product.description }}</p>-->
+            <p><i class="glyphicon glyphicon-euro"></i>{{ item.product.price }}</p>
                 <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
                     <div class="form-group">
@@ -27,26 +26,29 @@
                     </div>
                     <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Amend</button>
                 </form>
-            </p>
         </div>
     </div>
     {% endfor %}
 </div>
-<div class="row productBack">
+<div class="row total">
     <p>Total</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+    <a href="{% url 'checkout' %}" class="btn" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
 </div>
 <style>
+.footer-bs {
+    position: fixed;
+}
     .bg-primary {
+        width: 30%;
         margin: 10px;
         padding: 5px;
         border: 1px solid;
-        background-color: #D6DBDF;
-    }
-    .productBack {
-        margin-bottom: 10px;
         background-color: white;
+        color: black;
+    }
+    body {
+        background-color: #42bddb;
     }
 </style>
 {% endblock %}

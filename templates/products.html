@@ -2,12 +2,12 @@
 
 <div class="row row-flex productBack">
     {% for product in products %}
-    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+    <div class="col-sm-offset-0 col-lg-4 display panel">
         <div class="panel-body">
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
             <h3>{{ product.name }}</h3>
             <p class="product-description">{{ product.description }}</p>
-            <p>{{ product.price }}</p>
+            <p><i class="glyphicon glyphicon-euro"></i>{{ product.price }}</p>
             <form method="post" action="{% url 'add_to_cart' product.id %}">
                 {% csrf_token %}
                 <div class="input-group">
@@ -16,18 +16,22 @@
                             <button class="btn btn-success" type="submit">Add</button>
                           </span>
                 </div>
-                <!-- /input-group -->
             </form>
         </div>
     </div>
+    
+    
     {% endfor %}
 </div>
 <style>
     .panel-default, .panel-body, .productBack {
-        background-color: #033c73;
+        background-color: none;
     }
     body {
-        background-color: #cccccc;
+        background-color: #17a1ccd1;
+    }
+    .panel {
+        margin: 5px;
     }
 </style>
 {% endblock %}
