@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/bogdan-vlad/YourNurse247.svg?branch=master)](https://travis-ci.org/bogdan-vlad/YourNurse247)
+
+
 
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
