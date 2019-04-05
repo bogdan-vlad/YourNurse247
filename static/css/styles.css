@@ -42,13 +42,8 @@ textarea {
     color: #000000;
     border-radius: 5px;
 }
-/*footer {*/
-/*    margin-top: 40px;*/
-/*    padding-top: 20px;*/
-/*    padding-bottom: 20px;*/
-/*    color: #A9A9A9;*/
-/*}*/
 footer {
+    width: 100%;
     position: relative;
     right: 0;
     bottom: 0;
