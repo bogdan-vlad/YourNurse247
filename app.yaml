@@ -1,0 +1,11 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: YourNurse247/templates/base.html
+  upload: YourNurse247/templates/base.html
+
+- url: /
+  static_dir: YourNurse247

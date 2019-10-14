@@ -27,7 +27,7 @@ SECRET_KEY = 'g5@=har73h4u=m&1zdw*vhihs1^)4w3m1$l@5c5(11)p(oq4@x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yournurse247.herokuapp.com', 'yournurse247-site-bogdanvlad.c9users.io']
+ALLOWED_HOSTS = ['yournurse247.herokuapp.com', 'yournurse247-site-bogdanvlad.c9users.io', '127.0.0.1']
 
 
 # Application definition
