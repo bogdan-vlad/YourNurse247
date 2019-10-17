@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from django.urls import reverse
-from django.contrib.auth import password_reset, password_reset_done, password_reset_confirm, password_reset_complete
+from django.core.urlresolvers import reverse_lazy
+from django.contrib.auth.views import password_reset, password_reset_done, password_reset_confirm, password_reset_complete
 
 urlpatterns = [
     url(r'^$', password_reset,

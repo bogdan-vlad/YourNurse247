@@ -15,7 +15,7 @@ class Post(models.Model):
         app_label = "blog"
 
     # Author is linked to a registered User in the 'auth_user' table
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.CharField(max_length=200)
     content = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
