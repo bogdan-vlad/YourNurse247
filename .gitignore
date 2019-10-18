@@ -2,6 +2,7 @@
 env.py
 __pycache__
 .~c9*
+venv
  __pycache__/
 _python_runtime.py
 .cache/
@@ -13,6 +14,9 @@ _python_runtime.py
 *~
 config_override.py
 _config_override.py
+credentials_demo.json
+credentials_staging.json
+credentials_production.json
 dev_appserver.py
 dev_server_env.tmp
 doc/
