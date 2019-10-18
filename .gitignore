@@ -14,9 +14,6 @@ _python_runtime.py
 *~
 config_override.py
 _config_override.py
-credentials_demo.json
-credentials_staging.json
-credentials_production.json
 dev_appserver.py
 dev_server_env.tmp
 doc/
@@ -28,8 +25,6 @@ static/css/*.css
 static/js/*.js
 static/js/*.map
 venv/
-static/public_js/*.js
-static/public_js/*.map
 templates/public/*
 data/
 app.yaml
