@@ -21,10 +21,8 @@ env/
 venv/
 eslint.xml
 node_modules
-static/css/*.css
-static/js/*.js
-static/js/*.map
 venv/
 templates/public/*
 data/
 app.yaml
+.end
