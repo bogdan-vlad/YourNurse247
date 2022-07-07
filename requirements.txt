@@ -7,7 +7,7 @@ django-forms-bootstrap==3.1.0
 html5lib==0.999
 gunicorn==19.9.0
 pytz==2018.4
-requests==2.2.1
+requests==2.20.0
 six==1.5.2
 stripe==1.82.1
 urllib3==1.7.1
